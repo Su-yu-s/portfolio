@@ -125,8 +125,7 @@
   .proj-row{
     display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center;
   }
-  .proj-row.flip .proj-figure{order:2;}
-  .proj-row.flip .proj-body{order:1;}
+  .proj-row.flip .proj-figure{order:-1;}
   .proj-no{font-size:0.75rem;font-weight:600;color:var(--accent);letter-spacing:.08em;margin-bottom:12px;}
   .proj-name{font-size:clamp(1.6rem,3vw,2.2rem);font-weight:700;color:var(--text);letter-spacing:-.01em;line-height:1.2;}
   .proj-one{font-size:1rem;color:var(--text-2);margin-top:10px;font-weight:500;}
@@ -239,7 +238,7 @@
       <div class="hero-copy">
         <div class="hero-tag"><i></i>Portfolio · 2026</div>
         <h1 class="hero-name">苏-作品集<span class="dot">          .</span></h1>
-        <p class="hero-bio">      7 个项目，覆盖 Java 全栈 Web、桌面工具、HarmonyOS 原生应用、C++ 图形学算法、算法课程设计与实时 Web 教学工具，验证从想法到交付的完整链路。</p>
+        <p class="hero-bio">      8 个项目，覆盖 Java 全栈 Web、桌面工具、HarmonyOS 原生应用、C++ 图形学算法、软件授权系统、算法课程设计与实时 Web 教学工具，验证从想法到交付的完整链路。</p>
       </div>
       <div class="hero-left">
         <div class="hero-contact">
@@ -488,6 +487,38 @@
           <div class="frame-bar"><span class="fdot" style="background:#ff5f57;"></span><span class="fdot" style="background:#febc2e;"></span><span class="fdot" style="background:#28c840;"></span></div>
           <img class="frame-img" src="https://aka.doubaocdn.com/s/sUAKYUJqWV" alt="LCS 动态规划求解算法示意图" loading="lazy">
           <div class="frame-cap">LCS</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 项目 8：JWT License ===== -->
+<section class="proj">
+  <div class="wrap">
+    <div class="proj-row flip">
+      <div class="proj-body reveal">
+        <div class="proj-no">08</div>
+        <h2 class="proj-name">JWT License</h2>
+        <p class="proj-one">软件授权系统：C++ 客户端 × Java 服务端完整闭环</p>
+        <p class="proj-desc">从零实现的软件授权（License）系统。服务端基于 Spring Boot + MyBatis-Plus，管理产品、授权 Key、设备会话与审计日志，签发 RSA-SHA256 签名的 JWT 令牌；客户端为 Qt6 桌面程序与零依赖 C++ SDK，基于 CPU / MAC / BIOS / 磁盘生成设备指纹，本地完成签名验证与 claims 校验，覆盖激活、心跳、在线检查、接管、注销全流程。</p>
+        <div class="proj-tags">
+          <span class="tag">C++17</span><span class="tag">Qt6</span><span class="tag">CMake</span><span class="tag">Java</span><span class="tag">Spring Boot</span><span class="tag">MyBatis-Plus</span><span class="tag">JWT / RSA</span><span class="tag">MySQL</span>
+        </div>
+        <div class="proj-btns">
+          <a class="btn btn-primary" href="https://github.com/Su-yu-s/JWT-License" target="_blank" rel="noopener">GitHub源码</a>
+        </div>
+      </div>
+      <div class="proj-figure reveal-img">
+        <div class="frame">
+          <div class="frame-bar"><span class="fdot" style="background:#ff5f57;"></span><span class="fdot" style="background:#febc2e;"></span><span class="fdot" style="background:#28c840;"></span></div>
+          <img class="frame-img" src="https://aka.doubaocdn.com/s/z1DVDtEVz4" alt="JWT License 客户端激活授权界面" loading="lazy">
+          <div class="frame-cap">客户端 · 激活授权</div>
+        </div>
+        <div class="frame" style="margin-top:16px;">
+          <div class="frame-bar"><span class="fdot" style="background:#ff5f57;"></span><span class="fdot" style="background:#febc2e;"></span><span class="fdot" style="background:#28c840;"></span></div>
+          <img class="frame-img contain-fit" src="https://aka.doubaocdn.com/s/xzqsBGU8t8" alt="JWT 授权管理后台总览" loading="lazy">
+          <div class="frame-cap">服务端 · 授权管理后台</div>
         </div>
       </div>
     </div>
